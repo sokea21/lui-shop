@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#09070f">
+  <meta name="description" content="LUI SHOP ">
+  <title>LUI SHOP — FiveM Roleplay Items</title>
+  <link rel="icon" type="image/png" href="assets/lui-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body id="top">
+  <div class="announcement">FIVEM ROLEPLAY ITEMS <span>·</span> <strong>GEAR UP FOR YOUR NEXT STORY</strong></div>
+  <aside class="dashboard-sidebar" aria-label="Shop menu">
+    <a class="sidebar-brand" href="#" aria-label="LUI SHOP home">
+      <img src="assets/lui-logo.png" alt="">
+      <span>LUI <small> SHOP</small></span>
+    </a>
+    <span class="sidebar-label">MENU</span>
+    <a class="sidebar-link active" href="#shop"><span aria-hidden="true">▦</span> Dashboard</a>
+    <a class="sidebar-link" href="#shop"><span aria-hidden="true">◇</span> Inventory</a>
+  </aside>
+  <header class="site-header">
+    <button class="icon-button menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#shop" data-category-link="All">Shop</a>
+      <a href="#shop" data-category-link="Inventory">Inventory</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="brand-logo" href="#" aria-label="LUI SHOP home">
+      <img src="assets/lui-logo.png" alt="LUI — Give a try with us">
+    </a>
+  </header>
+
+  <main>
+    <section class="shop-section section-wrap" id="shop">
+      <div class="section-heading">
+        <div>
+          <h2>Products</h2>
+        </div>
+        <label class="sort-control">Sort by
+          <select id="sort-select" aria-label="Sort products">
+            <option value="featured">Featured</option>
+            <option value="low">Price: low to high</option>
+            <option value="high">Price: high to low</option>
+          </select>
+        </label>
+      </div>
+      <div class="shop-toolbar">
+        <div class="category-tabs" role="group" aria-label="Filter by category">
+          <button class="category-tab active" data-category="All">All items <span>09</span></button>
+        </div>
+        <span class="result-count" aria-live="polite">Showing 9 items</span>
+      </div>
+      <div class="product-grid" id="product-grid"></div>
+      <div class="empty-state" hidden>No inventory items available.</div>
+    </section>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div>
+        <span class="contact-eyebrow">NEED A HAND?</span>
+        <h2 id="contact-title">Get in touch</h2>
+        <p>Questions about an item or your order? Contact us on Discord.</p>
+      </div>
+      <div class="contact-users" aria-label="Discord contacts">
+        <a class="contact-placeholder" href="https://discord.com/users/943895289239056475" target="_blank" rel="noopener noreferrer">
+          <img src="assets/items/1.png" alt="">
+          leab1460
+        </a>
+        <a class="contact-placeholder" href="https://discord.com/users/sadd_oftheday" target="_blank" rel="noopener noreferrer">
+          <img src="assets/items/2.png" alt="">
+          @sadd_oftheday
+        </a>
+        <a class="contact-placeholder" href="https://discord.com/channels/@me" target="_blank" rel="noopener noreferrer">
+          <img src="assets/discord-contact.png" alt="">
+          yuchen28
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© 2026 LUI SHOP. Independent demo shop; not affiliated with Cfx.re, Rockstar Games, or any FiveM server.</small>
+  </footer>
+</body>
+</html>
